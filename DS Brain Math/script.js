@@ -1,5 +1,6 @@
 let question = document.getElementById(`question`);
 let submitBtn = document.getElementById(`submitBtn`);
+let resultText = document.getElementById(`resultText`);
 
 const mathEquation = `+-`;
 
@@ -54,10 +55,8 @@ function questionList() {
         function filterTrue(e){
             return e == true;
         }
-        console.log(results);
-        console.log(userInputValue);
-        console.log(scoring);
-        console.log(finalScore);
+        
+        resultText.innerHTML = `Score: ${finalScore}`
     }
     return;
 }
